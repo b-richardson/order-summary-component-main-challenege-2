@@ -1,0 +1,214 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* Mobile First 375px */
+
+html, body {
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+    background-image: url(/Users/brianrichardson/Downloads/order-summary-component-main/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1440px){
+    body {
+        background-image: url(/Users/brianrichardson/Downloads/order-summary-component-main/images/pattern-background-desktop.svg);
+    }
+}
+
+
+/* Desktop Queries 1440px */
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.card{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  width: 350px;
+  height: 565px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  filter: drop-shadow(0 3mm 3mm rgba(49, 52, 216, .35));
+}
+
+
+
+@media (min-width:1000px){
+      .card {
+        width:400px;
+      }
+}
+
+
+
+.topHalf{
+  height: 30%;
+  width: 100%;
+  background-image: url(/Users/brianrichardson/Downloads/order-summary-component-main/images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.bottomHalf{
+  /* border: 2px solid yellow; */
+  height: 70%;
+  background-color: white;
+}
+
+.title{
+  /* border: 2px solid red; */
+  padding-bottom: 0px;
+  font-size: 22px;
+
+}
+
+.cardDescription{
+  /* border: 2px solid green; */
+  width: 80%;
+  margin-left: 35px;
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 5px;
+}
+
+.planButton{
+/* border: 2px solid blue; */
+width: 86%;
+margin-left: 25px;
+margin-top: 25px;
+height: 75px;
+font-size: 12px;
+display: flex;
+flex-direction: row;
+overflow: hidden;
+background-color: rgba(248, 249, 254, 1.0);
+border-radius: 10px;
+}
+
+.note{
+  /* border: 2px solid orange; */
+  width: 25%;
+  height: 100%;
+  background-image: url(/Users/brianrichardson/Downloads/order-summary-component-main/images/icon-music.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.annual{
+  /* border: 2px solid purple; */
+  width: 50%;
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+.annualPlan{
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.cost{
+  font-size: 15px;
+  color: hsl(224, 23%, 55%);
+}
+
+
+.change{
+  /* border: 2px solid red; */
+  width: 25%;
+  height: 100%;
+  padding-top: 25px;
+  font-size: 13px;
+  color: hsl(245, 75%, 52%);
+}
+
+.change span a:hover{
+  color: rgb(114, 112, 233);
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+.paymentButton{
+  /* border: 2px solid blue; */
+  width: 86%;
+  margin-left: 25px;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 25px;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  text-align: center;
+  padding-top: 13px;
+  border-radius: 10px;
+  filter: drop-shadow(0 3mm 3mm rgba(49, 52, 216, .35));
+}
+
+.paymentButton:hover{
+  background-color: rgb(114, 112, 233);
+  transform: scale(.95);
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.cancelOrder{
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  margin-top: 30px;
+}
+
+.cancelOrder:hover{
+  color: black;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+
+/* url(/Users/brianrichardson/Downloads/order-summary-component-main/images/icon-music.svg) */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
